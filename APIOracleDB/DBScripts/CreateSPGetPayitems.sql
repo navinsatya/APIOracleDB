@@ -1,0 +1,38 @@
+﻿
+CREATE PROCEDURE CreateSPGetPayitems
+AS
+BEGIN
+    SELECT TOP (1000) [ID]
+      ,[ITEM]
+      ,[ISPECYR]
+      ,[ICONTCLS]
+      ,[IFOLDOR]
+      ,[IMAJOR]
+      ,[IOBSELET]
+      ,[ILREQSUP]
+      ,[IPRICEH]
+      ,[ITEMCLSS]
+      ,[ITEMCONV]
+      ,[ITEMTYPE]
+      ,[IUNITS]
+      ,[IUNITSCM]
+      ,[IUNITSLS]
+      ,[IDESCR]
+      ,[IDESCRL]
+      ,[IDESCL2]
+      ,[IEEOITEM]
+      ,[ISPCLITM]
+      ,[ASPHADJ]
+      ,[IREGFLAG]
+      ,[ALTITMID]
+      ,[EEOPCT]
+      ,[FUELADJ]
+      ,[ILDT1]
+      ,[ILDT2]
+      ,[ILDT3]
+      ,[ILFLG1]
+      ,[ILNUM1]
+      ,[ILSST1]
+      ,[ILLST1]
+  FROM [DOTEIEBD].[PAYITEM ].[MV_ITEMLIST];
+END;
